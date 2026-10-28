@@ -124,7 +124,7 @@
     </div>
 
     <!-- Header -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100">
+        <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="#" class="flex items-center gap-3">
@@ -175,9 +175,17 @@
                 <div class="lg:col-span-6 space-y-6 text-left">
                     <div>
                         <span class="inline-flex items-center gap-2 px-4 py-1.5 pill-badge text-xs sm:text-sm">
+
                             
                             <p ><span class=" text-gold">★★★★★ </span>1000+ patients treated 
                             </p>
+                            <div class="flex items-center -space-x-3 overflow-hidden">
+                        <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Patient">
+                        <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Patient">
+                        <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Patient">
+                        <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Patient">
+                        <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80" alt="Patient">
+                    </div>
                         </span>
                     </div>
 
@@ -268,9 +276,13 @@
     <!-- GOOGLE RATING SECTION -->
   
         <!-- Google Review Screenshots (2 to 4) -->
-   <section class="py-14 bg-white border-b border-gray-100">
+   
+
+    <!-- Swiper CSS (Is head section me ya file ke top par include karein) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<section class="py-14 bg-white border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <!-- <span class="pill-badge px-4 py-1 text-xs">Community Support</span> -->
         <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal mt-3">Proud Family Dental Care</h2>
         <p class="text-charcoal-muted text-sm sm:text-base max-w-2xl mx-auto mt-2">
             We're proud to be a family dental clinic providing quality care to families in Burwood East and surrounding areas.
@@ -286,29 +298,94 @@
             </div>
         </div>
 
-        <!-- Google Review Screenshots -->
-        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 items-stretch max-w-5xl mx-auto">
-            <!-- Review Screenshot 1 -->
-            <a href="re4.png" target="_blank" class="group block bg-white p-3 sm:p-4 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
-                <img src="re4.png" alt="Google review of Burwood Dental Care" class="w-full h-full rounded-2xl object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
-            </a>
+        <!-- Auto-sliding Review Carousel -->
+        <div class="mt-12 max-w-5xl mx-auto relative px-2 sm:px-6">
+            <div class="swiper reviewSwiper py-4">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide h-auto">
+                        <a href="re12.png" target="_blank" class="group block bg-gray-50 p-4 rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all h-full flex items-center justify-center">
+                            <img src="re12.png" alt="Google review" class="w-full h-auto max-h-72 rounded-2xl object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                        </a>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide h-auto">
+                        <a href="re1.png" target="_blank" class="group block bg-gray-50 p-4 rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all h-full flex items-center justify-center">
+                            <img src="re1.png" alt="Google review" class="w-full h-auto max-h-72 rounded-2xl object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                        </a>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide h-auto">
+                        <a href="re3.png" target="_blank" class="group block bg-gray-50 p-4 rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all h-full flex items-center justify-center">
+                            <img src="re3.png" alt="Google review" class="w-full h-auto max-h-72 rounded-2xl object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                        </a>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide h-auto">
+                        <a href="re4.png" target="_blank" class="group block bg-gray-50 p-4 rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all h-full flex items-center justify-center">
+                            <img src="re4.png" alt="Google review" class="w-full h-auto max-h-72 rounded-2xl object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                        </a>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide h-auto">
+                        <a href="re5.png" target="_blank" class="group block bg-gray-50 p-4 rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all h-full flex items-center justify-center">
+                            <img src="re5.png" alt="Google review" class="w-full h-auto max-h-72 rounded-2xl object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                        </a>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide h-auto">
+                        <a href="re2.png" target="_blank" class="group block bg-gray-50 p-4 rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all h-full flex items-center justify-center">
+                            <img src="re2.png" alt="Google review" class="w-full h-auto max-h-72 rounded-2xl object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- Review Screenshot 2 -->
-            <a href="re1.png" target="_blank" class="group block bg-white p-3 sm:p-4 rounded-3xl border border-gray-200 shadow-md hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
-                <img src="re1.png" alt="Google review of Burwood Dental Care" class="w-full h-full rounded-2xl object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
-            </a>
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination !-bottom-2"></div>
+            </div>
         </div>
 
-        <div class="mt-10">
+        <!-- <div class="mt-12">
             <a href="#reviews" class="inline-block bg-tealBrand hover:bg-tealBrand-hover text-white font-bold text-xs sm:text-sm tracking-wider uppercase px-8 py-3.5 rounded-full shadow transition">
                 CHECK WHAT OUR PATIENTS SAY ABOUT US ↗
             </a>
-        </div>
+        </div> -->
     </div>
 </section>
 
+<!-- Swiper JS Script (Is page ke footer me/bottom par add karein) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.reviewSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                // Desktop par 2 slides ek baar me dikhengi
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                }
+            }
+        });
+    });
+</script>
+
+
+
+
+
     <!-- PAIN POINT SECTION -->
-    <section class="py-16 bg-bgSoft">
+<section class="py-16 bg-bgSoft">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
             <span class="pill-badge px-4 py-1 text-xs">Clear Answers &amp; Transparency</span>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal">
@@ -339,7 +416,7 @@
     </section>
 
     <!-- VIDEO TESTIMONIALS SECTION -->
-    <section class="py-20 bg-white">
+<section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-14 space-y-2">
                 <span class="pill-badge px-4 py-1 text-xs">Patient Video Experience</span>
@@ -415,16 +492,16 @@
                 </div>
             </div>
 
-            <div class="text-center mt-10">
-                <a href="#reviews" class="btn-outline-teal px-6 py-3 rounded-full text-xs font-bold inline-flex items-center gap-2">
-                    Explore All Patient Reviews &rarr;
-                </a>
+            <div class="text-center mt-12">
+                <button onclick="openBookingModal()" class="btn-gold px-8 py-3.5 rounded-full text-sm font-bold shadow">
+                    BOOK MY APPOINTMENT
+                </button>
             </div>
         </div>
     </section>
 
     <!-- PERSONALISED CARE & PREVENTION SPLIT SECTIONS -->
-    <section class="py-20 bg-bgSoft border-y border-gray-200/60">
+<section class="py-20 bg-bgSoft border-y border-gray-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         
         <!-- Split 1 -->
@@ -455,7 +532,7 @@
                     </div>
                 </div>
                 <button onclick="openBookingModal()" class="btn-teal px-7 py-3.5 rounded-full text-sm shadow font-semibold">
-                    SCHEDULE YOUR VISIT
+                    BOOK MY APPOINTMENT
                 </button>
             </div>
         </div>
@@ -483,7 +560,7 @@
                     </div>
                 </div>
                 <button onclick="openBookingModal()" class="btn-gold px-7 py-3.5 rounded-full text-sm shadow font-semibold">
-                    BOOK PREVENTATIVE CARE
+                    BOOK MY APPOINTMENT
                 </button>
             </div>
             <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-white order-1 lg:order-2">
@@ -495,7 +572,7 @@
 </section>
 
     <!-- WRITTEN REVIEWS SECTION -->
-  <section id="reviews" class="py-20 bg-white">
+<section id="reviews" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-14 space-y-2">
             <span class="pill-badge px-4 py-1 text-xs">Verified Patient Feedback</span>
@@ -503,28 +580,63 @@
             <p class="text-charcoal-muted text-sm">Discover what patients say about their experiences with our team, our approach to dental care and their visits to Burwood Dental Care.</p>
         </div>
 
-        <!-- Google Review Screenshots -->
-        <div class="grid md:grid-cols-3 gap-8 items-start">
-            <!-- Review Screenshot 1 -->
-            <a href="re1.png" target="_blank" class="block bg-bgSoft p-3 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300">
-                <img src="re1.png" alt="Google review of Burwood Dental Care by Andrew B." class="w-full h-auto rounded-2xl object-contain" loading="lazy">
-            </a>
+        <!-- Masonry Grid Layout (3 Columns with Varying Card Heights) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+            
+            <!-- COLUMN 1 (3 Reviews) -->
+            <div class="flex flex-col gap-6">
+                <!-- Review Screenshot 1 -->
+                <a href="re9.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re9.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+                <!-- Review Screenshot 2 -->
+                <a href="re2.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re2.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+                <!-- Review Screenshot 3 -->
+                <a href="re7.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re7.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+            </div>
 
-            <!-- Review Screenshot 2 -->
-            <a href="re2.png" target="_blank" class="block bg-bgSoft p-3 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300">
-                <img src="re2.png" alt="Google review of Burwood Dental Care by Michelle K." class="w-full h-auto rounded-2xl object-contain" loading="lazy">
-            </a>
+            <!-- COLUMN 2 (3 Reviews) -->
+            <div class="flex flex-col gap-6">
+                <!-- Review Screenshot 4 -->
+                <a href="re4.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re4.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+                <!-- Review Screenshot 5 -->
+                <a href="re6.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re6.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+                <!-- Review Screenshot 6 -->
+                <a href="re10.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re12.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+            </div>
 
-            <!-- Review Screenshot 3 -->
-            <a href="re3.png" target="_blank" class="block bg-bgSoft p-3 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300">
-                <img src="re3.png" alt="Google review of Burwood Dental Care by James R." class="w-full h-auto rounded-2xl object-contain" loading="lazy">
-            </a>
+            <!-- COLUMN 3 (3 Reviews) -->
+            <div class="flex flex-col gap-6">
+                <!-- Review Screenshot 7 -->
+                <a href="re10.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re10.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+                <!-- Review Screenshot 8 -->
+                <a href="re11.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re11.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+                <!-- Review Screenshot 9 -->
+                <a href="re1.png" target="_blank" class="block bg-bgSoft p-3.5 rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300">
+                    <img src="re1.png" alt="Google review of Burwood Dental Care" class="w-full h-auto rounded-2xl object-contain" loading="lazy">
+                </a>
+            </div>
+
         </div>
 
-        <div class="text-center mt-10">
-            <a href="https://burwooddentalcare.com.au" target="_blank" class="btn-outline-teal px-6 py-3 rounded-full text-xs font-bold inline-flex items-center gap-2">
-                CHECK MORE PATIENT REVIEWS &rarr;
-            </a>
+        <div class="text-center mt-14">
+            <button onclick="openBookingModal()" class="btn-gold px-8 py-3.5 rounded-full text-sm font-bold shadow">
+                BOOK MY APPOINTMENT
+            </button>
         </div>
     </div>
 </section>
@@ -707,6 +819,13 @@
                         Yes, we offer payment plan options for eligible patients. Please ask our team about availability, eligibility and terms.
                     </div>
                 </div>
+
+               
+            </div>
+            <div class="text-center mt-12">
+                <button onclick="openBookingModal()" class="btn-gold px-8 py-3.5 rounded-full text-sm font-bold shadow">
+                    BOOK MY APPOINTMENT
+                </button>
             </div>
         </div>
     </section>
